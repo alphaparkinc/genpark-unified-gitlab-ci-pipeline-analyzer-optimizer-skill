@@ -1,0 +1,38 @@
+{
+  "name": "genpark-unified-gitlab-ci-pipeline-analyzer-optimizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Unified GitLab CI pipeline analyzer detecting bottlenecks, caching opportunities, and auto-parallelizing stages.",
+  "author": "genpark",
+  "category": "devops-ci",
+  "tags": [
+    "gitlab-ci",
+    "pipeline-optimizer",
+    "ci-cd-tuning",
+    "cache-optimization",
+    "yaml-linter"
+  ],
+  "inputs": {
+    "gitlab_ci_yaml_content": {
+      "type": "string"
+    },
+    "cluster_executor": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "pipeline_analysis_id": {
+      "type": "string"
+    },
+    "cache_hit_optimization_gain_pct": {
+      "type": "number"
+    },
+    "estimated_build_time_reduction_min": {
+      "type": "integer"
+    },
+    "optimized_gitlab_ci_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
